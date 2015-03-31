@@ -11,8 +11,8 @@ else
   DEB_CONFIGURE_EXTRA_FLAGS := --with-flavour=glx --with-gles=2.0 --enable-debug=no
 endif
 
-DEB_CONFIGURE_EXTRA_FLAGS += --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH) --enable-manual=yes
-#DEB_CONFIGURE_EXTRA_FLAGS += --disable-gtk-doc
+DEB_CONFIGURE_EXTRA_FLAGS += --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH) --enable-manual=no
+DEB_CONFIGURE_EXTRA_FLAGS += --disable-gtk-doc
 
 DEB_DH_STRIP_ARGS := --dbg-package=libclutter-0.8-0
 
