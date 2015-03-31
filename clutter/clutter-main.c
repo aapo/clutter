@@ -684,8 +684,11 @@ clutter_threads_impl_unlock (void)
 void
 clutter_threads_init (void)
 {
+#if !GLIB_CHECK_VERSION(2,32,0)
+  /* Deprecated. No use after 2.32.0 (no need to use)*/
   if (!g_thread_supported ())
     g_error ("g_thread_init() must be called before clutter_threads_init()");
+#endif
 
   clutter_threads_mutex = g_mutex_new ();
 
