@@ -1,3 +1,10 @@
+clutter (0.8.2-2) unstable; urgency=low
+
+  * Compiling without GTK.
+  * Can be compiled with old or new GLIB.
+
+ -- Aapo Rantalainen <aapo.rantalainen@gmail.com>  Mon, 31 Mar 2015 21:12:33 +0300
+
 clutter (0.8.2-1ubuntu0) precise; urgency=low
 
   * No source changes. Just made packaging files multiarch compatible for precise.
